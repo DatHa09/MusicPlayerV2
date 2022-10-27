@@ -1,0 +1,20 @@
+:root {
+  --top-nav-height: 70px;
+  --footer-height: 93px;
+  --sidebar-width: 240px;
+  --bg-black-1: #212124;
+  --bg-black-2: #171719;
+  --bg-black-3: #29292d;
+  --bg-black-color: #1f1f22;
+  --default-color: #fcfcfc;
+  --highlight-color: #00ffff;
+  --sub-titles-color: #9898a6;
+  --hover-color: #4c4e54;
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}

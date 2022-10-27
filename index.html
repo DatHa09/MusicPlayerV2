@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/reset_css.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/topnav.css" />
+    <link rel="stylesheet" href="./assets/css/container.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+
+    <!-- js -->
+    <script defer src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="app__sidebar">
+        <div class="sidebar__top">
+          <!-- sidebar user info - logo -->
+          <section class="sidebar__section">
+            <a href="/" class="logo-link">
+              <i class="fa-brands fa-tiktok logo-img"></i>
+            </a>
+            <a href="#userInfo" class="sidebar__link">
+              <img
+                class="sidebar__user-picture"
+                src="./assets/img/avatar.png"
+                alt="user picture"
+              />
+            </a>
+            <a href="#settings" class="sidebar__link">
+              <ion-icon
+                name="settings-outline"
+                class="sidebar__more-user-info"
+              ></ion-icon>
+            </a>
+          </section>
+
+          <!-- sidebar main menu -->
+          <section class="sidebar__section">
+            <nav>
+              <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                  <a href="#home" class="sidebar__main-menu-link"> Home </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#explore" class="sidebar__main-menu-link">
+                    Explore
+                  </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#videos" class="sidebar__main-menu-link"> Videos </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+
+        <div class="sidebar__subnav">
+          <!-- sidebar collection -->
+          <section class="sidebar__section">
+            <span class="sidebar__title">MY COLLECTION</span>
+            <nav>
+              <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                  <a href="#mixes-and-radio" class="sidebar__nav-link">
+                    <img
+                      class="sidebar__nav-img"
+                      src="./assets/img/sidebar/Icon-Mixes.png"
+                      alt="Icon-Mixes"
+                    />
+                    Mixes and Radio
+                  </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#playlists" class="sidebar__nav-link">
+                    <img
+                      class="sidebar__nav-img"
+                      src="./assets/img/sidebar/Icon-Playlists.png"
+                      alt="Icon-Playlists"
+                    />
+                    Playlists
+                  </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#albums" class="sidebar__nav-link">
+                    <img
+                      class="sidebar__nav-img"
+                      src="./assets/img/sidebar/Icon-Tracks.png"
+                      alt="Icon-Tracks"
+                    />
+                    Albums
+                  </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#tracks" class="sidebar__nav-link">
+                    <img
+                      class="sidebar__nav-img"
+                      src="./assets/img/sidebar/Icon-Albums.png"
+                      alt="Icon-Albums"
+                    />
+                    Tracks
+                  </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#videos" class="sidebar__nav-link">
+                    <img
+                      class="sidebar__nav-img"
+                      src="./assets/img/sidebar/Icon-Videos.png"
+                      alt="Icon-Videos"
+                    />
+                    Videos
+                  </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#artists" class="sidebar__nav-link">
+                    <img
+                      class="sidebar__nav-img"
+                      src="./assets/img/sidebar/Icon-Artists.png"
+                      alt="Icon-Artists"
+                    />
+                    Artists
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          <!-- sidebar playlists -->
+          <section class="sidebar__section">
+            <span class="sidebar__title">MY PLAYLISTS</span>
+            <nav>
+              <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                  <a href="#clubbing" class="sidebar__nav-link"> Clubbing </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#maroon-5" class="sidebar__nav-link"> Maroon 5 </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#neffex" class="sidebar__nav-link"> Neffex </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#chill-story-1" class="sidebar__nav-link">
+                    Chill Story 1
+                  </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#chill-story-2" class="sidebar__nav-link">
+                    Chill Story 2
+                  </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#playlists-12" class="sidebar__nav-link">
+                    PlayLists 12
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          <!-- sidebar imported albums -->
+          <section class="sidebar__section">
+            <span class="sidebar__title">IMPORTED ALBUMS</span>
+            <nav>
+              <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                  <a href="#clubbing" class="sidebar__nav-link"> Clubbing </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#maroon-5" class="sidebar__nav-link"> Maroon 5 </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#neffex" class="sidebar__nav-link"> Neffex </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#chill-story-1" class="sidebar__nav-link">
+                    Chill Story 1
+                  </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#chill-story-2" class="sidebar__nav-link">
+                    Chill Story 2
+                  </a>
+                </li>
+                <li class="sidebar__nav-item">
+                  <a href="#playlists-12" class="sidebar__nav-link">
+                    PlayLists 12
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </aside>
+      <div class="app__main">
+        <header class="main__top-nav">
+          <div class="top-nav__left-content">
+            <a href="#back" class="top-nav__icon-link">
+              <img
+                class="top-nav__icon-img"
+                src="./assets/img/main/Icon-Arrow-Left.png"
+                alt="Icon-Arrow-Left"
+              />
+            </a>
+            <a href="#forward" class="top-nav__icon-link">
+              <img
+                class="top-nav__icon-img"
+                src="./assets/img/main/Icon-Arrow-Right.png"
+                alt="Icon-Arrow-Right"
+              />
+            </a>
+          </div>
+          <div class="top-nav__right-content">
+            <div class="top-nav__search">
+              <img
+                class="top-nav__search-img"
+                src="./assets/img/main/topnav/Search.png"
+                alt="top nav search"
+              />
+              <input
+                type="text"
+                name=""
+                id=""
+                class="top-nav__search-input"
+                placeholder="Search songs, artists, lyrics..."
+              />
+            </div>
+            <a href="#others" class="top-nav__others-link">
+              <img
+                class="top-nav__others-img"
+                src="./assets/img/main/topnav/Icon-Ellipsis.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </header>
+        <section class="main__container">
+        </section>
+        <footer class="main__footer">controls</footer>
+      </div>
+    </div>
+  </body>
+</html>
